@@ -1,0 +1,286 @@
+.dashboardContainer {
+  min-height: 100vh;
+  background-color: #fff;
+  flex-direction: column;
+  display: flex;
+}
+
+/* Status Bar Styles */
+.statusBar {
+  background-color: #fff;
+  align-items: flex-start;
+  width: 100%;
+  height: 46px;
+  padding-top: 21px;
+  display: flex;
+}
+
+.statusBarContent {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.timeDisplay {
+  color: #000;
+  text-align: center;
+  flex: 1 0 0;
+  gap: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-family: SF Pro, sans-serif;
+  font-size: 17px;
+  font-weight: 590;
+  line-height: 22px;
+}
+
+.statusIndicator {
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  height: 10px;
+  display: flex;
+}
+
+.statusIcons {
+  padding-left: 16px 16px 0px 6px;
+  padding-right: 16px 16px 0px 6px;
+  flex: 1 0 0;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  display: flex;
+}
+
+/* Content Section Styles */
+.contentSection {
+  margin-top: 44px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.wardTitle {
+  color: #000;
+  margin-bottom: 48px;
+  font-family: Inria Serif, serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* Search Bar Styles */
+.searchContainer {
+  width: 100%;
+  position: relative;
+}
+
+.searchBar {
+  border-width: 2px;
+  border-color: #d2d2d2;
+  border-radius: 20px;
+  align-items: center;
+  width: 100%;
+  height: 58px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+}
+
+.searchPlaceholder {
+  color: #888;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+.searchControls {
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+  display: flex;
+}
+
+.divider {
+  background-color: #d2d2d2;
+  width: 32px;
+  height: 0;
+}
+
+.settingsButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Action Buttons Styles */
+.actionButtonsContainer {
+  gap: 12px;
+  margin-top: 32px;
+  display: flex;
+}
+
+@media (max-width: 640px) {
+  .actionButtonsContainer {
+    flex-wrap: wrap;
+  }
+}
+
+.actionButton {
+  color: #fff;
+  background-color: #006184;
+  border-radius: 14.5px;
+  flex: 1;
+  height: 40px;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 9px 19px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+}
+
+/* Card Grid Styles */
+.cardGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+  display: grid;
+}
+
+@media (max-width: 640px) {
+  .cardGrid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.card {
+  border: 1px solid #000;
+  border-radius: 23px;
+  height: 391px;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  color: #000;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.cardList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.cardItem {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+
+.cardItemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.cardItemTitle {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color: #006184;
+}
+
+.cardItemDate {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+
+.cardItemDescription {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: #333;
+  margin: 4px 0 0 0;
+  line-height: 1.4;
+}
+
+/* News Card Styles */
+.newsCard {
+  backdrop-filter: blur(20px);
+  background-color: rgba(29, 29, 29, 0.4);
+  border-radius: 15px;
+  margin-top: 32px;
+  padding: 16px;
+  box-shadow: 0 5px 9px rgba(255, 255, 255, 0.1);
+}
+
+.newsCardContent {
+  align-items: flex-start;
+  gap: 12px;
+  display: flex;
+}
+
+.newsCardInfo {
+  flex: 1;
+}
+
+.newsCardTitle {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.locationContainer {
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  display: flex;
+}
+
+.locationText {
+  color: #cac8c8;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
+
+/* Bottom Navigation Styles */
+.bottomNav {
+  background-color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  height: 74px;
+  display: flex;
+  margin-top: auto;
+}
+
+.navButton {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
