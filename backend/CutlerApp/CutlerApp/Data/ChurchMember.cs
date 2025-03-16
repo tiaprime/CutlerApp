@@ -1,4 +1,7 @@
-namespace DefaultNamespace;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace CutlerApp.Data;
 
 public class ChurchMember // I used ChurchMember instead of just Member in case Member is a reserved word in .NET
 {
