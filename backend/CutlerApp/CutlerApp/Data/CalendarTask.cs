@@ -1,4 +1,7 @@
-namespace DefaultNamespace;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace CutlerApp.Data;
 
 public class CalendarTask //I used CalendarTask instead of just Task because it is a reserved word in .NET
 {

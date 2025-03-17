@@ -1,4 +1,6 @@
-namespace DefaultNamespace;
+using System.ComponentModel.DataAnnotations;
+
+namespace CutlerApp.Data;
 
 public class Ward
 {
