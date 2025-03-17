@@ -1,0 +1,128 @@
+/* Fully center the content */
+.ward-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f4f4f9;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* The card that contains the directory with a fixed height */
+  .ward-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.12);
+    width: 400px;
+    height: 700px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Title */
+  .ward-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Search bar */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    background: #0a557f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Directory List with fixed height for consistent layout */
+  .ward-list {
+    overflow-y: auto;
+    height: 600px; /* Fixed height */
+    text-align: left;
+    padding: 10px;
+  }
+  
+  /* No Records Found Message */
+  .no-records {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    padding-top: 20px;
+  }
+  
+  /* Group Headers */
+  .ward-group {
+    margin-bottom: 15px;
+  }
+  
+  .ward-letter {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 5px;
+  }
+  
+  /* Names */
+  .ward-names {
+    list-style: none;
+    padding-left: 10px;
+  }
+  
+  .ward-person {
+    font-size: 15px;
+    color: #004466;
+    padding: 5px 0;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .ward-person strong {
+    font-weight: bold;
+  }
+  
+  /* Alphabet Scroll (Clickable) */
+  .alphabet-scroll {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #006184;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .alphabet-scroll span {
+    cursor: pointer;
+  }
+  
+  .alphabet-scroll span:hover {
+    color: black;
+  }
+  
