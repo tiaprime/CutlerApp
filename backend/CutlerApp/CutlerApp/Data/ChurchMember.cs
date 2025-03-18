@@ -16,7 +16,7 @@ public class ChurchMember // I used ChurchMember instead of just Member in case 
     public string Username { get; set; }
     [Required]
     public string Password { get; set; }
-    public string Birthday { get; set; }
+    public DateOnly Birthday { get; set; }
     public string Phone { get; set; }
     public string Email { get; set; }
     public string Address { get; set; }

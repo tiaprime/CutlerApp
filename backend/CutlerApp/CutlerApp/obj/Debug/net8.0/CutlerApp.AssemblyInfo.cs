@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CutlerApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8666dc65f92b106d1581058f884225df0fc0968d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a2c7796f6b9500ac708ffccc6ae0a0a67cba553")]
 [assembly: System.Reflection.AssemblyProductAttribute("CutlerApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CutlerApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
