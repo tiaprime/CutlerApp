@@ -1,7 +1,7 @@
 .container {
-  background-color: #fff;
-  width: 100%;
-  max-width: 393px;
+  background-color: #ededed;
+  width: 480px;
+  max-width: 480px; /* Ensures it expands fully */
   height: 100vh;
   margin: 0 auto;
   position: relative;
@@ -22,7 +22,8 @@
   font-weight: 700;
   position: absolute;
   top: 92px;
-  left: 121px;
+  left: 50%;
+  transform: translateX(-50%); /* Center aligns text */
 }
 
 @media (width<=640px) {
@@ -34,8 +35,8 @@
 
 .groupsContainer {
   flex-direction: column;
-  gap: 41px;
-  padding: 157px 21px 0;
+  padding: 157px 21px 50px; /* Added bottom padding */
+  gap: 41px; 
   display: flex;
 }
 
