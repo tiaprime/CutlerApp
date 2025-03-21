@@ -29,7 +29,9 @@
   gap: 10px;
   padding-left: 6px;
   padding-right: 6px;
-  font-family: SF Pro, sans-serif;
+  font-family:
+    SF Pro,
+    sans-serif;
   font-size: 17px;
   font-weight: 590;
   line-height: 22px;
@@ -63,7 +65,9 @@
 .wardTitle {
   color: #000;
   margin-bottom: 48px;
-  font-family: Inria Serif, serif;
+  font-family:
+    Inria Serif,
+    serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 24px;
@@ -71,8 +75,9 @@
 
 /* Search Bar Styles */
 .searchContainer {
-  width: 100%;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 .searchBar {
@@ -265,7 +270,7 @@
   font-size: 14px;
 }
 
-/* Bottom Navigation Styles */
+/* Bottom Navigation Styles
 .bottomNav {
   background-color: #fff;
   justify-content: space-around;
@@ -273,14 +278,30 @@
   height: 74px;
   display: flex;
   margin-top: auto;
+} */
+
+.bottomNav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw; /* Full width of the viewport */
+  height: 60px; /* Adjust height as needed */
+  background-color: white; /* Adjust as needed */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .navButton {
   background: none;
   border: none;
-  padding: 8px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 10px;
+}
+
+.navButton svg {
+  width: 28px;
+  height: 28px;
 }
