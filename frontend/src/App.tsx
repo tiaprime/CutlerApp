@@ -1,10 +1,11 @@
 import './App.css'
-import Login from './Components/Login'
+// import Login from './Components/Login'
+import HomeCarousel from './HomeCarousel';
 
 function App() {
   return (
     <>
-      <Login />
+      <HomeCarousel />
     </>
   );
 }

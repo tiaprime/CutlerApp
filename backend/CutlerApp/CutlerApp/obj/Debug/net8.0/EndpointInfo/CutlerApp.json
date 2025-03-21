@@ -1,0 +1,160 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "CutlerApp",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Ward": {
+      "get": {
+        "tags": [
+          "Ward"
+        ],
+        "operationId": "GetMembers",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ChurchMember"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ChurchMember"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ChurchMember"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Calling": {
+        "required": [
+          "callingId",
+          "callingName"
+        ],
+        "type": "object",
+        "properties": {
+          "callingId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "callingName": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChurchMember": {
+        "required": [
+          "firstName",
+          "lastName",
+          "password",
+          "username",
+          "ward",
+          "wardId"
+        ],
+        "type": "object",
+        "properties": {
+          "memberId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "middleName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "username": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "password": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "birthday": {
+            "type": "string",
+            "format": "date"
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "fheGroupId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "callingId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "calling": {
+            "$ref": "#/components/schemas/Calling"
+          },
+          "wardId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ward": {
+            "$ref": "#/components/schemas/Ward"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ward": {
+        "required": [
+          "wardId",
+          "wardName"
+        ],
+        "type": "object",
+        "properties": {
+          "wardId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "wardName": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
