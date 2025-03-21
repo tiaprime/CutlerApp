@@ -33,7 +33,7 @@ function FHEGroups() {
             hasMembers={true}
           />
         </section>
-        <BottomNavigation />
+        <BottomNavigation />{' '}
       </main>
     </>
   );
