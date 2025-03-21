@@ -29,7 +29,9 @@
   gap: 10px;
   padding-left: 6px;
   padding-right: 6px;
-  font-family: SF Pro, sans-serif;
+  font-family:
+    SF Pro,
+    sans-serif;
   font-size: 17px;
   font-weight: 590;
   line-height: 22px;
@@ -63,7 +65,9 @@
 .wardTitle {
   color: #000;
   margin-bottom: 48px;
-  font-family: Inria Serif, serif;
+  font-family:
+    Inria Serif,
+    serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 24px;

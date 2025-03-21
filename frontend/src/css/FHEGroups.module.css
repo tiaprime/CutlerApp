@@ -1,9 +1,9 @@
 .container {
-  background-color: #ededed;
-  width: 480px;
-  max-width: 480px; /* Ensures it expands fully */
-  height: 100vh;
-  margin: 0 auto;
+  background-color: #f9f9f9;
+  width: 390px; /* Set width to match the full viewport width */
+  height: 844px; /* Set height to match the full viewport height */
+  margin: 0;
+  padding: 0; /* Remove margins to ensure full coverage */
   position: relative;
 }
 
@@ -23,7 +23,7 @@
   position: absolute;
   top: 92px;
   left: 50%;
-  transform: translateX(-50%); /* Center aligns text */
+  transform: translateX(-50%);
 }
 
 @media (width<=640px) {
@@ -35,8 +35,8 @@
 
 .groupsContainer {
   flex-direction: column;
-  padding: 157px 21px 50px; /* Added bottom padding */
-  gap: 41px; 
+  padding: 157px 21px 50px;
+  gap: 41px;
   display: flex;
 }
 
