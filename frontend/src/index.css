@@ -66,3 +66,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+/* this is for the slider */
+.slick-slide >div {
+  margin: 0 10px;
+}
