@@ -1,0 +1,90 @@
+/* Callings.module.css */
+
+/* Ensure container takes full width */
+.callings-container {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    width: 100vw; /* Ensure it takes full width */
+    max-width: 100%; /* Prevent any unwanted constraints */
+    margin: 0 auto;
+    box-sizing: border-box; /* Prevents extra padding from affecting width */
+    overflow-x: hidden; /* Prevents horizontal scrolling issues */
+  }
+  
+  /* Header */
+  .callings-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    max-width: 800px; /* Matches button width */
+  }
+  
+  .back-button {
+    font-size: 24px;
+    color: #4b5563;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .callings-title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  /* Subtitle */
+  .subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Calling List */
+  .callings-list {
+    width: 100%;
+    max-width: 800px; /* Ensures buttons don't go outside the container */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center; /* Ensures buttons are centered */
+  }
+  
+  /* Fixing Button Size & Fit */
+  .calling-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 22px;
+    background-color: #e5e7eb;
+    border-radius: 12px;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    width: 100%; /* Full width */
+    max-width: 700px; /* Buttons are correctly sized */
+    box-sizing: border-box; /* Prevents padding from affecting size */
+  }
+  
+  /* Hover effect */
+  .calling-link:hover {
+    background-color: #d1d5db;
+    transform: scale(1.02);
+  }
+  
+  /* Arrow icon */
+  .arrow {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4b5563;
+  }
+  
