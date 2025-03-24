@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './WardDashboard.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const BottomNavigation: React.FC = () => {
   return (

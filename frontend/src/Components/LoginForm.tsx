@@ -1,15 +1,18 @@
 'use client';
 import React, { useState } from 'react';
 import styles from './Login.module.css';
+import { useNavigate } from "react-router-dom";
 
 const LoginForm: React.FC = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle login logic here
     console.log('Login attempt with:', { username, password });
+    navigate('/WardDashboard');
   };
 
   return (
