@@ -1,0 +1,268 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Ensure body takes the background */
+}
+.toolsDirectory {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensure it stays at the top */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Full height of the viewport */
+  padding-top: 20px; /* Optional space from the top */
+}
+.frame {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+.time {
+  color: #000;
+  white-space: nowrap;
+  text-align: center;
+  flex: 1;
+  align-self: stretch;
+  gap: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 16px;
+  padding-right: 6px;
+  font-family:
+    SF Pro,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 17px;
+  font-weight: 590;
+  line-height: 1;
+}
+.dynamicIslandspacer {
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 124px;
+  height: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+}
+.levels {
+  flex: 1;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 6px;
+  padding-right: 16px;
+  display: flex;
+}
+.img {
+  aspect-ratio: 1.58;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 19px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.img2 {
+  aspect-ratio: 1.42;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  width: 17px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.div {
+  color: #000;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  /* max-width: 322px; */
+  margin-top: 50px;
+  font-family:
+    Roboto,
+    -apple-system,
+    Helvetica,
+    sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 0.6;
+  display: flex;
+}
+.img3 {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 44px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.img4 {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  width: 60px;
+}
+.div2 {
+  color: #fff;
+  text-align: center;
+  align-self: center;
+  width: 100%;
+  margin-top: 10px;
+  font-family:
+    Roboto,
+    -apple-system,
+    Helvetica,
+    sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center; /* Ensures the buttons are centered */
+}
+.navigationBar {
+  background-color: #f4f4f4;
+  width: 100%;
+  margin-top: 25px;
+}
+.div3 {
+  background-color: #f4f4f4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 19px 79px;
+  display: flex;
+}
+.div4 {
+  flex-direction: column;
+  align-items: stretch;
+  width: 113px;
+  max-width: 100%;
+  display: flex;
+}
+.div5 {
+  align-items: stretch;
+  gap: 40px 66px;
+  width: 100%;
+  display: flex;
+}
+.img5 {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  align-self: start;
+  width: 22px;
+}
+.iconButton {
+  border-radius: 32px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  min-height: 24px;
+  padding: 2px 1px 2px 2px;
+  display: flex;
+  overflow: hidden;
+}
+.img6 {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  align-self: stretch;
+  width: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.div6 {
+  background-color: #006184;
+  border-radius: 50%;
+  flex-shrink: 0;
+  align-self: end;
+  width: 8px;
+  height: 8px;
+  margin-top: 5px;
+  display: flex;
+}
+
+/* Unified button styling */
+.commonButton {
+  background-color: #f4f4f4;
+  width: 100%;
+  max-width: 400px; /* Consistent button size */
+  background-color: #006184;
+  border-radius: 22px;
+  padding: 30px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.commonButton:hover {
+  transform: scale(1.05);
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  gap: 30px; /* Space between buttons */
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Optional: add a background color */
+  padding: 20px;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Style for the Tools text */
+.tools {
+  font-size: 40px; /* Adjust the size as needed */
+  font-weight: 600;
+  color: black;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .commonButton {
+    font-size: 20px; /* Bigger text */
+    padding: 30px 35px; /* Larger button padding */
+    max-width: 600px; /* Larger button size */
+  }
+}
