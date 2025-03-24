@@ -1,0 +1,46 @@
+.container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 393px;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (width<=640px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.title {
+  color: #000;
+  font-family:
+    Inria Serif,
+    serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  top: 92px;
+  left: 121px;
+}
+
+@media (width<=640px) {
+  .title {
+    font-size: 32px;
+    left: 100px;
+  }
+}
+
+.groupsContainer {
+  flex-direction: column;
+  gap: 41px;
+  padding: 157px 21px 0;
+  display: flex;
+}
+
+@media (width<=640px) {
+  .groupsContainer {
+    padding: 157px 15px 0;
+  }
+}
