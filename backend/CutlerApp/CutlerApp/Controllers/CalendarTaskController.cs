@@ -1,6 +1,6 @@
 namespace CutlerApp.Controllers;
 
-public class WardController
+public class CalendarTaskController
 {
     
 }
