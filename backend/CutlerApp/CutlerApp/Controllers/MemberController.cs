@@ -5,11 +5,11 @@ namespace CutlerApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class WardController : ControllerBase
+    public class MemberController : ControllerBase
     {
         private DataContext _dataContext;
 
-        public WardController(DataContext temp)
+        public MemberController(DataContext temp)
         {
             _dataContext = temp;
         }
