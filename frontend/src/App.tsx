@@ -1,15 +1,26 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
-import HomePage from './pages/HomePage';
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import './App.css'
+import Login from './pages/Login'
+import WardDashboard from './Components/WardDashboard';
+import FHEGroups from './pages/FHEGroups';
+import ToolsPage from './Components/ToolsPage';
+import NewsCard from './Components/NewsCard';
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
+
     <>
-      <HomePage />
+      <Router>
+
+        <Routes>
+          <Route path="/" element={<Login/>} />
+          <Route path="/WardDashboard" element={<WardDashboard/>} />
+          <Route path="/Tools" element={<ToolsPage/>} />
+          <Route path="/FHEGroups" element={<FHEGroups/>} />
+          <Route path="/News" element={<NewsCard title={''} location={''}/>} />
+        </Routes>
+      </Router>
     </>
   );
 }
