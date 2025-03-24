@@ -7,6 +7,8 @@ import ToolsPage from './Components/ToolsPage';
 import NewsCard from './Components/NewsCard';
 
 function App() {
+  const [count, setCount] = useState(0);
+
   return (
 
     <>
