@@ -6994,19 +6994,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/valu.montoya/.nuget/packages/": {}
+    "/Users/amy/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/valu.montoya/Documents/CutlerApp/CutlerApp/backend/CutlerApp/CutlerApp/CutlerApp.csproj",
+      "projectUniqueName": "/Users/amy/RiderProjects/CutlerApp/backend/CutlerApp/CutlerApp/CutlerApp.csproj",
       "projectName": "CutlerApp",
-      "projectPath": "/Users/valu.montoya/Documents/CutlerApp/CutlerApp/backend/CutlerApp/CutlerApp/CutlerApp.csproj",
-      "packagesPath": "/Users/valu.montoya/.nuget/packages/",
-      "outputPath": "/Users/valu.montoya/Documents/CutlerApp/CutlerApp/backend/CutlerApp/CutlerApp/obj/",
+      "projectPath": "/Users/amy/RiderProjects/CutlerApp/backend/CutlerApp/CutlerApp/CutlerApp.csproj",
+      "packagesPath": "/Users/amy/.nuget/packages/",
+      "outputPath": "/Users/amy/RiderProjects/CutlerApp/backend/CutlerApp/CutlerApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/valu.montoya/.nuget/NuGet/NuGet.Config"
+        "/Users/amy/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -7087,7 +7087,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

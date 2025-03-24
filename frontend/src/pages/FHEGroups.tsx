@@ -4,8 +4,42 @@ import Header from '../Components/Header';
 import BackButton from '../Components/BackButton';
 import GroupCard from '../Components/GroupCard';
 import BottomNavigation from '../Components/BottomNavigation';
+import { Member } from '../types/member';
 
 function FHEGroups() {
+  /* 
+  const [members, setMembers] = useState<Member[]>([]);
+  const [callings, setCallings] = useState<Calling[]>([]);
+
+  // get member and calling info from the two individual APIs
+  useEffect(() => {
+    const fetchData = async () => {
+      const memberResponse = await fetch('https://localhost:5000/api/Member');
+      const callingResponse = await fetch('http://localhost:4000/api/Calling');
+
+      const memberData = await memberResponse.json();
+      const callingData = await callingResponse.json();
+
+      setMembers(memberData);
+      setCallings(callingData);
+    };
+    fetchData();
+  }, []);
+
+  // join members and callings on callingId
+  const combinedData = members.map((Mebmer) => {
+    const team = callings.find((c) => {
+      return c.callingId === Member.callingId; // Match callingId
+    });
+
+    return {
+      ...Mebmer,
+      callingName: Calling ? Calling.callingName : 'Unknown', // Add callingName or default to 'Unknown'
+    };
+  });
+
+ */
+
   return (
     <>
       <link
