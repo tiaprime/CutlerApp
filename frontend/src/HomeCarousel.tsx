@@ -44,7 +44,7 @@ function HomeCarousel() {
 
 return (
 <>
-<h1>I am workong on the carousle</h1>
+<h1>Recent church news</h1>
 
 
 
