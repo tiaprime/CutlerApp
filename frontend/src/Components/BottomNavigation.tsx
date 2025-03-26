@@ -3,9 +3,15 @@ import styles from './WardDashboard.module.css';
 import { useNavigate } from 'react-router-dom';
 
 const BottomNavigation: React.FC = () => {
+  const navigate = useNavigate(); // Hook for navigation
+
+const handleNavigation = (path: string) => {
+    navigate(path);
+  };
+
   return (
     <nav className={styles.bottomNav}>
-      <button className={styles.navButton} aria-label="Home">
+      <button className={styles.navButton} aria-label="Home" onClick={() => handleNavigation('/WardDashboard')}>
         <div
           dangerouslySetInnerHTML={{
             __html:
@@ -21,7 +27,7 @@ const BottomNavigation: React.FC = () => {
           }}
         />
       </button>
-      <button className={styles.navButton} aria-label="Menu">
+      <button className={styles.navButton} aria-label="Menu" onClick={() => handleNavigation('/Tools')}>
         <div
           dangerouslySetInnerHTML={{
             __html:
@@ -29,7 +35,7 @@ const BottomNavigation: React.FC = () => {
           }}
         />
       </button>
-      <button className={styles.navButton} aria-label="Profile">
+      <button className={styles.navButton} aria-label="Profile" onClick={() => handleNavigation('/Profile')}>
         <div
           dangerouslySetInnerHTML={{
             __html:
