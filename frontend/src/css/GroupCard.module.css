@@ -1,6 +1,13 @@
 .groupCard {
-  width: 100%;
+  width: 500px;
 }
+
+@media (width<=640px) {
+  .groupCard {
+    width: 290px;
+  }
+}
+
 
 .groupTitle {
   color: #000;
@@ -42,7 +49,7 @@
 @media (width<=640px) {
   .leaderText,
   .membersText {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 

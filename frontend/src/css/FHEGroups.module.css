@@ -1,11 +1,21 @@
-.container {
+/* .container {
   background-color: #f9f9f9;
-  width: 390px; /* Set width to match the full viewport width */
-  height: 844px; /* Set height to match the full viewport height */
+  width: 390px; 
+  height: 844px; 
   margin: 0;
-  padding: 0; /* Remove margins to ensure full coverage */
+  padding: 0; 
   position: relative;
 }
+ */
+ 
+.container {
+  min-height: 100vh;
+  background-color: #fff;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
 
 @media (width<=640px) {
   .container {
@@ -20,28 +30,26 @@
     serif;
   font-size: 40px;
   font-weight: 700;
-  position: absolute;
-  top: 92px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  top: 35px;
+  align-self: center;
 }
 
 @media (width<=640px) {
   .title {
     font-size: 32px;
-    left: 100px;
   }
 }
 
 .groupsContainer {
   flex-direction: column;
-  padding: 157px 21px 50px;
-  gap: 41px;
+  padding: 100px 20px 50px;
+  gap: 40px;
   display: flex;
 }
 
 @media (width<=640px) {
   .groupsContainer {
-    padding: 157px 15px 0;
+    padding: 75px 15px 0;
   }
 }
