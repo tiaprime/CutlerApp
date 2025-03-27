@@ -10,4 +10,5 @@ export interface Member {
   email: string;
   address: string;
   fheGroupId: number;
+  callingId: number;
 }

@@ -8,7 +8,6 @@
   }
 }
 
-
 .groupTitle {
   color: #000;
   margin-bottom: 37px;
@@ -46,9 +45,25 @@
   text-align: left;
 }
 
+.memberName {
+  color: #000;
+  margin-bottom: 24px;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  text-indent: 30px;
+}
+
 @media (width<=640px) {
   .leaderText,
   .membersText {
+    font-size: 16px;
+  }
+}
+
+@media (width<=640px) {
+  .memberName {
     font-size: 16px;
   }
 }
