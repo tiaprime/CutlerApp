@@ -7,6 +7,7 @@ import ActionButtons from './ActionButtons';
 import CardContainer from './CardContainer';
 import NewsCard from './NewsCard';
 import BottomNavigation from './BottomNavigation';
+import Carousel from './Carousel';
 
 const WardDashboard: React.FC = () => {
   return (
@@ -73,6 +74,7 @@ const WardDashboard: React.FC = () => {
         </div>
 
         <NewsCard title="Church News" location="Salt Lake Temple" />
+        <Carousel />
       </section>
 
       <BottomNavigation />
