@@ -72,9 +72,16 @@ const WardDashboard: React.FC = () => {
             ]}
           />
         </div>
-
+        
         <NewsCard title="Church News" location="Salt Lake Temple" />
-        <Carousel />
+        {/* This is where the carousel goes, it I could have gotten it working */}
+        {/* <Carousel /> */}
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       </section>
 
       <BottomNavigation />

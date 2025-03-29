@@ -1,8 +1,8 @@
 import '../App.css'
-import '../bootstrap/dist/css/bootstrap.min.css';
-import Slider from "../react-slick";
-import "../slick-carousel/slick/slick.css";
-import "../slick-carousel/slick/slick-theme.css";
+// import '../bootstrap/dist/css/bootstrap.min.css';
+// import Slider from "../react-slick";
+// import "../slick-carousel/slick/slick.css";
+// import "../slick-carousel/slick/slick-theme.css";
 const data = [
     {
         title: "Read about the new presidents and matrons of 8 temples — from Alaska to Brazil",
@@ -27,44 +27,69 @@ const data = [
 
 ]
 
-const MyCarousel = () => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 30000,
-        arrows: false,
-    };
+const Carousel = () => {
+return(
+    <>
 
-    return (
-        <div className="d-flex justify-content-center">
-            <div className="mt-3" style={{ width: "33%", minWidth: "280px" }}>
-                <Slider {...settings}>
-                    {data.map((d, index) => (
-                        <div key={index} className="bg-white p-2 rounded shadow-sm text-center">
-                            <img 
-                                src={d.img} 
-                                alt="IMAGE HERE" 
-                                className="img-fluid mx-auto d-block"
-                                style={{ width: "90%", maxHeight: "200px", objectFit: "cover" }} 
-                            />
-                            <div className="p-2">
-                                <h6 className="fw-bold mb-1">{d.title}</h6>
-                                <p className="text-muted small">{d.subline}</p>
-                                <a href={d.link} className="btn btn-primary btn-sm w-100 mt-2">Read More</a>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
-        </div>
-    );
+    <p>the page shows up</p>
+    <img src='frontend/src/assets/200w.gif' alt='HELP MEEEEEE (image ALT)'/>
+    <img src='https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzgyenRxYTY5ejVjNmpnODg2eTg2N3JwMnYxb21sYmszNmNrMmR0cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8lgqAbycBjosxjfi9k/giphy.gif' />
+    
+    </>)
 };
 
-export default MyCarousel;
+export default Carousel;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     const settings = {
+//         dots: true,
+//         infinite: true,
+//         speed: 500,
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         autoplaySpeed: 30000,
+//         arrows: false,
+//     };
+
+//     return (
+//         <div className="d-flex justify-content-center">
+//             <div className="mt-3" style={{ width: "33%", minWidth: "280px" }}>
+//                 <Slider {...settings}>
+//                     {data.map((d, index) => (
+//                         <div key={index} className="bg-white p-2 rounded shadow-sm text-center">
+//                             <img 
+//                                 src={d.img} 
+//                                 alt="IMAGE HERE" 
+//                                 className="img-fluid mx-auto d-block"
+//                                 style={{ width: "90%", maxHeight: "200px", objectFit: "cover" }} 
+//                             />
+//                             <div className="p-2">
+//                                 <h6 className="fw-bold mb-1">{d.title}</h6>
+//                                 <p className="text-muted small">{d.subline}</p>
+//                                 <a href={d.link} className="btn btn-primary btn-sm w-100 mt-2">Read More</a>
+//                             </div>
+//                         </div>
+//                     ))}
+//                 </Slider>
+//             </div>
+//         </div>
+//     );
+// };
+
+// export default MyCarousel;
 
 // function HomeCarousel() {
 
