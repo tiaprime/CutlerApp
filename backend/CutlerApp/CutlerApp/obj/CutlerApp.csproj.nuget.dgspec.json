@@ -1,20 +1,22 @@
 {
   "format": 1,
   "restore": {
-    "/Users/amy/RiderProjects/CutlerApp/backend/CutlerApp/CutlerApp/CutlerApp.csproj": {}
+    "C:\\Users\\mandr\\source\\repos\\CutlerApp\\CutlerApp\\backend\\CutlerApp\\CutlerApp\\CutlerApp.csproj": {}
   },
   "projects": {
-    "/Users/amy/RiderProjects/CutlerApp/backend/CutlerApp/CutlerApp/CutlerApp.csproj": {
+    "C:\\Users\\mandr\\source\\repos\\CutlerApp\\CutlerApp\\backend\\CutlerApp\\CutlerApp\\CutlerApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/amy/RiderProjects/CutlerApp/backend/CutlerApp/CutlerApp/CutlerApp.csproj",
+        "projectUniqueName": "C:\\Users\\mandr\\source\\repos\\CutlerApp\\CutlerApp\\backend\\CutlerApp\\CutlerApp\\CutlerApp.csproj",
         "projectName": "CutlerApp",
-        "projectPath": "/Users/amy/RiderProjects/CutlerApp/backend/CutlerApp/CutlerApp/CutlerApp.csproj",
-        "packagesPath": "/Users/amy/.nuget/packages/",
-        "outputPath": "/Users/amy/RiderProjects/CutlerApp/backend/CutlerApp/CutlerApp/obj/",
+        "projectPath": "C:\\Users\\mandr\\source\\repos\\CutlerApp\\CutlerApp\\backend\\CutlerApp\\CutlerApp\\CutlerApp.csproj",
+        "packagesPath": "C:\\Users\\mandr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mandr\\source\\repos\\CutlerApp\\CutlerApp\\backend\\CutlerApp\\CutlerApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/amy/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mandr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -95,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

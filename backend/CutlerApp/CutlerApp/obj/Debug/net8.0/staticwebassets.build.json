@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "c1Y9nHcQvgGGGIZllcQUreA1Z/L1WO+5vzzXRd1D4uk=",
+  "Hash": "JKsRIxeLkLS2hI55zxK/TUv4H7OeUuTdqdnOPpXalRY=",
   "Source": "CutlerApp",
   "BasePath": "_content/CutlerApp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
