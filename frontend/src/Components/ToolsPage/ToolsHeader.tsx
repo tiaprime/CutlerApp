@@ -32,6 +32,30 @@ function ToolsHeader() {
         />
       </button>
       <h1 className={styles.tools}>Tools</h1>
+      <button
+        onClick={() => navigate('/Profile')}
+        style={{
+          position: 'absolute',
+          top: '20px',
+          right: '20px',
+          border: 'none',
+          background: 'none',
+          padding: 0,
+          cursor: 'pointer',
+        }}
+      >
+        <img
+          src="/src/assets/photo.svg"
+          alt="Button"
+          style={{
+            width: '50px',
+            height: 'auto',
+            transition: 'transform 0.3s ease',
+          }}
+          onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.1)')}
+          onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+        />
+      </button>
     </header>
   );
 }
