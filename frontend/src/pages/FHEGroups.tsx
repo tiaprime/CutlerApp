@@ -4,8 +4,29 @@ import Header from '../Components/Header';
 import BackButton from '../Components/BackButton';
 import GroupCard from '../Components/GroupCard';
 import BottomNavigation from '../Components/BottomNavigation';
+import { Member } from '../types/member';
+import { Calling } from '../types/calling';
+import { useState, useEffect } from 'react';
 
 function FHEGroups() {
+  const [members, setMembers] = useState<Member[]>([]);
+  const [callings, setCallings] = useState<Calling[]>([]);
+
+  // get member and calling info from the two individual APIs
+  useEffect(() => {
+    const fetchData = async () => {
+      const memberResponse = await fetch('https://localhost:5000/api/Member');
+      const callingResponse = await fetch('https://localhost:5000/api/Calling');
+
+      const memberData = await memberResponse.json();
+      const callingData = await callingResponse.json();
+
+      setMembers(memberData);
+      setCallings(callingData);
+    };
+    fetchData();
+  }, []);
+
   return (
     <>
       <link
@@ -33,7 +54,7 @@ function FHEGroups() {
             hasMembers={true}
           />
         </section>
-        <BottomNavigation />
+        <BottomNavigation />{' '}
       </main>
     </>
   );

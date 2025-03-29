@@ -14,13 +14,13 @@ namespace CutlerApp.Controllers
             _dataContext = temp;
         }
         
-        [HttpGet(Name = "GetMembers")]
-        public IEnumerable<ChurchMember> Get()
+        [HttpGet(Name = "GetWards")]
+        public IEnumerable<Ward> Get()
         {
-            var members = _dataContext.Members
+            var wards = _dataContext.Wards
                 .ToList();
 
-            return (members);
+            return (wards);
         }
     }
 }
