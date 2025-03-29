@@ -18,11 +18,23 @@ const ProfilePicture: React.FC<ProfilePictureProps> = ({ imageUrl }) => {
                 />
             </div>
             <figcaption>
-                <button onClick={handleChangePicture} className="mb-8 text-xs">
-                    Change Picture
-                </button>
+            <button
+                onClick={handleChangePicture}
+                style={{
+                    background: 'none',   // Removes the background
+                    border: 'none',       // Removes the border
+                    color: 'black',     // Ensures text color matches surrounding text
+                    padding: '0',         // Removes extra padding
+                    marginBottom: '8px',  // Keeps the existing bottom margin
+                    fontSize: '12px',     // Matches the "text-xs" class size
+                    cursor: 'pointer',    // Ensures the button still looks clickable
+                }}
+            >
+                Change Picture
+            </button>
             </figcaption>
         </figure>
+        
     );
 };
 export default ProfilePicture;

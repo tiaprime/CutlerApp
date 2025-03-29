@@ -91,14 +91,18 @@ export const ProfileForm = () => {
       onSubmit={handleSubmit}
       className="flex flex-col px-9 mt-16 w-full text-xs text-black space-y-5"
     >
-      <FormField label="Username" value="yANCHUI" />
-      <FormField label="Email" value="yanchui@gmail.com" />
+      <FormField label="Username" value="johndoe" />
+      <FormField label="Email" value="johndoe@gmail.com" />
       <FormField label="Phone Number" value="+14987889999" />
       <FormField label="Password" value="evFTbyVVCd" />
 
       <button
         type="submit"
         className="self-center px-16 py-2.5 mt-10 w-full text-base font-bold whitespace-nowrap bg-sky-800 rounded-xl max-w-[283px] text-zinc-100"
+        style={{
+          margin: '6px 0px 18px 0px',
+          backgroundColor: '#006184'
+      }}
       >
         Update
       </button>
