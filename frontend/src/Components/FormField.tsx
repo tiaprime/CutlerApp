@@ -28,9 +28,9 @@ interface FormFieldProps {
   
   export const FormField: React.FC<FormFieldProps> = ({ label, value }) => {
     return (
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", width: "100%", marginBottom: "1rem" }}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", width: "100%", marginBottom: ".7rem" }}>
         {/* Label with bold text and spacing */}
-        <label style={{ fontWeight: "bold", marginBottom: "0.5rem", textAlign: "left", fontSize: "14px", color: "#000" }}>
+        <label style={{ fontWeight: "bold", marginBottom: "0.1rem", textAlign: "left", fontSize: "14px", color: "#000" }}>
           {label}
         </label>
         {/* Input container with consistent size and border */}

@@ -1,5 +1,7 @@
-import './App.css'
-import Login from './Components/Login'
+import './App.css';
+import Login from './Components/Login';
+import FHEGroups from './pages/FHEGroups';
+import EditProfilePage from './pages/EditProfilePage';
 
 function App() {
   return (
