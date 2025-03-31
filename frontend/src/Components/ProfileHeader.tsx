@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 interface ProfileHeaderProps {
-    title: string;
+  title: string;
 }
 const ProfileHeader: React.FC<ProfileHeaderProps> = ({ title }) => {
     return (
         <section className="flex relative justify-center items-center bg-sky-800 h-[219px]">
-            <button className="absolute left-[33px] top-[54px]" aria-label="Go back">
+            {/* <button className="absolute left-[33px] top-[54px]" aria-label="Go back">
                 <svg
                     width="44"
                     height="44"
@@ -46,8 +47,8 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({ title }) => {
                         </clipPath>
                     </defs>
                 </svg>
-            </button>
-            <h1 className="text-base font-bold text-zinc-100">{title}</h1>
+            </button> */}
+            <h5 className="text-base font-bold text-zinc-100">{title}</h5>
         </section>
     );
 };

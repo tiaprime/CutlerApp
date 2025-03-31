@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import styles from './WardDashboard.module.css';
-import StatusBar from './StatusBar';
 import SearchBar from './SearchBar';
 import ActionButtons from './ActionButtons';
 import CardContainer from './CardContainer';
@@ -10,10 +9,8 @@ import BottomNavigation from './BottomNavigation';
 
 const WardDashboard: React.FC = () => {
   return (
-    <main className={styles.dashboardContainer}>
-      <StatusBar />
-
-      <section className={styles.contentSection}>
+    <div className={styles.dashboardContainer}>
+      <div className={styles.contentSection}>
         <h1 className={styles.wardTitle}>Ward 92</h1>
 
         <SearchBar />
@@ -73,10 +70,10 @@ const WardDashboard: React.FC = () => {
         </div>
 
         <NewsCard title="Church News" location="Salt Lake Temple" />
-      </section>
+      </div>
 
       <BottomNavigation />
-    </main>
+    </div>
   );
 };
 
