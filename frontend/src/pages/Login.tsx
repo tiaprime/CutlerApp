@@ -1,14 +1,12 @@
 'use client';
-import React from 'react';
 import styles from '../Components/Login.module.css';
-import StatusBar from '../Components/StatusBar';
 import LoginForm from '../Components/LoginForm';
 
 
 function Login() {
   return (
     <>
-      <section className={styles.login}>
+      <div>
         
 
         <img
@@ -20,7 +18,7 @@ function Login() {
         <h1 className={styles.welcome}>Welcome</h1>
 
         <LoginForm />
-      </section>
+      </div>
     </>
   );
 }
