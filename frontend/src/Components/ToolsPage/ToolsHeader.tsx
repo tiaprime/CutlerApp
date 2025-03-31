@@ -2,11 +2,16 @@
 import styles from './ToolsDirectory.module.css';
 import { useNavigate } from 'react-router-dom';
 
-function ToolsHeader() {
-  const navigate = useNavigate(); // Initialize useNavigate
+interface ToolsHeaderProps {
+  title?: string; // Optional prop
+}
+
+function ToolsHeader({ title = "Tools" }: ToolsHeaderProps) {
+  const navigate = useNavigate();
 
   return (
     <header className={styles.div}>
+      {/* Back Button */}
       <button
         onClick={() => navigate(-1)}
         style={{
@@ -21,7 +26,7 @@ function ToolsHeader() {
       >
         <img
           src="/src/assets/component3.png"
-          alt="Button"
+          alt="Back"
           style={{
             width: '50px',
             height: 'auto',
@@ -31,7 +36,11 @@ function ToolsHeader() {
           onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
         />
       </button>
-      <h1 className={styles.tools}>Tools</h1>
+
+      {/* Dynamic Title */}
+      <h1 className={styles.tools}>{title}</h1>
+
+      {/* Profile Button */}
       <button
         onClick={() => navigate('/Profile')}
         style={{
@@ -46,7 +55,7 @@ function ToolsHeader() {
       >
         <img
           src="/src/assets/photo.svg"
-          alt="Button"
+          alt="Profile"
           style={{
             width: '50px',
             height: 'auto',

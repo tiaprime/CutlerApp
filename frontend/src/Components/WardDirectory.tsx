@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import "./WardDirectory.css"; // Import CSS
+import "./WardDirectory.css";
+import ToolsHeader from "./ToolsPage/ToolsHeader"; // ✅ Header
+import BottomNavigation from "./BottomNavigation"; // ✅ Footer
 
 const people = [
   { lastName: "Bennett", firstName: "Liam" },
@@ -30,7 +32,6 @@ const people = [
   { lastName: "Zimmerman", firstName: "Grace" },
 ];
 
-// Function to group people by first letter
 const groupByLetter = (people: any[]) => {
   return people.reduce((acc, person) => {
     const letter = person.lastName[0].toUpperCase();
@@ -44,10 +45,9 @@ const WardDirectory: React.FC = () => {
   const [search, setSearch] = useState("");
   const groupedPeople = groupByLetter(people);
 
-  // Filtering based on search input
   const filteredPeople = Object.keys(groupedPeople).reduce((acc, letter) => {
     const filteredNames = groupedPeople[letter].filter(
-      (person: { lastName: string; firstName: string; }) =>
+      (person: { lastName: string; firstName: string }) =>
         person.lastName.toLowerCase().includes(search.toLowerCase()) ||
         person.firstName.toLowerCase().includes(search.toLowerCase())
     );
@@ -55,7 +55,6 @@ const WardDirectory: React.FC = () => {
     return acc;
   }, {} as { [key: string]: any[] });
 
-  // Function to scroll to a letter section
   const scrollToLetter = (letter: string) => {
     const section = document.getElementById(letter);
     if (section) {
@@ -64,52 +63,55 @@ const WardDirectory: React.FC = () => {
   };
 
   return (
-    <div className="ward-container">
-      <div className="ward-card">
-        {/* Title */}
-        <h1 className="ward-title">Ward Directory</h1>
+    <>
+      <ToolsHeader title="Ward Directory" />
+      <div className="ward-container">
+        <div className="ward-card">
+          <h1 className="ward-title">Ward Directory</h1>
 
-        {/* Search Bar */}
-        <div className="search-bar">
-          <input
-            type="text"
-            placeholder="Search"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
-          <button>Go</button>
-        </div>
+          <div className="search-bar">
+            <input
+              type="text"
+              placeholder="Search"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+            <button>Go</button>
+          </div>
 
-        {/* Directory List */}
-        <div className="ward-list">
-          {Object.keys(filteredPeople).length > 0 ? (
-            Object.keys(filteredPeople).map((letter) => (
-              <div key={letter} className="ward-group" id={letter}>
-                <h2 className="ward-letter">{letter}</h2>
-                <ul className="ward-names">
-                  {filteredPeople[letter].map((person, index) => (
-                    <li key={`${person.lastName}-${person.firstName}-${index}`} className="ward-person">
-                      <strong>{person.lastName}</strong>, {person.firstName}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))
-          ) : (
-            <p className="no-records">No records found</p>
-          )}
-        </div>
+          <div className="ward-list">
+            {Object.keys(filteredPeople).length > 0 ? (
+              Object.keys(filteredPeople).map((letter) => (
+                <div key={letter} className="ward-group" id={letter}>
+                  <h2 className="ward-letter">{letter}</h2>
+                  <ul className="ward-names">
+                    {filteredPeople[letter].map((person, index) => (
+                      <li
+                        key={`${person.lastName}-${person.firstName}-${index}`}
+                        className="ward-person"
+                      >
+                        <strong>{person.lastName}</strong>, {person.firstName}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))
+            ) : (
+              <p className="no-records">No records found</p>
+            )}
+          </div>
 
-        {/* Alphabet Side Scroll (Clickable) */}
-        <div className="alphabet-scroll">
-          {"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map((letter) => (
-            <span key={letter} onClick={() => scrollToLetter(letter)}>
-              {letter}
-            </span>
-          ))}
+          <div className="alphabet-scroll">
+            {"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map((letter) => (
+              <span key={letter} onClick={() => scrollToLetter(letter)}>
+                {letter}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+      <BottomNavigation /> {/* ✅ Added Footer */}
+    </>
   );
 };
 
