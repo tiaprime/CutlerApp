@@ -8,6 +8,8 @@ import EditProfilePage from './pages/EditProfilePage';
 import ToolsDirectory from './Components/ToolsPage/ToolsDirectory';
 import WardDirectory from './Components/WardDirectory';
 import Callings from './Components/Callings';
+import CallingDetails from './Components/CallingDetail';
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
           <Route path="/News" element={<NewsCard title={''} location={''} />} />
           <Route path="/Profile" element={<EditProfilePage />} />
           <Route path="/Calling" element={<Callings />} />
+          <Route path="/Callings/:callingName" element={<CallingDetails />} />
         </Routes>
       </Router>
     </>

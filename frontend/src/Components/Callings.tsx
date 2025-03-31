@@ -1,6 +1,9 @@
+import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa"; // Importing an arrow icon from FontAwesome
-import styles from "../css/Callings.module.css"; // Import the CSS module
+import styles from "../css/Callings.module.css";
+
+import ToolsHeader from "./ToolsPage/ToolsHeader";
+import BottomNavigation from "./BottomNavigation";
 
 const callings = [
   "Bishopric",
@@ -17,28 +20,25 @@ const callings = [
 const Callings = () => {
   return (
     <div className={styles["callings-container"]}>
-      {/* Header */}
-      <div className={styles["callings-header"]}>
-        <button className={styles["back-button"]}>←</button>
-        <h1 className={styles["callings-title"]}>Callings</h1>
-      </div>
+      {/* Top Navigation */}
+      <ToolsHeader title="Callings" />
 
-      {/* Subtitle */}
-      <h2 className={styles["subtitle"]}>Organizations</h2>
-
-      {/* Calling List */}
+      {/* List of Callings */}
       <div className={styles["callings-list"]}>
         {callings.map((calling) => (
           <Link
             key={calling}
-            to={`/callings/${calling.replace(/\s+/g, "-").toLowerCase()}`}
+            to={`/Callings/${calling.replace(/\s+/g, "-").toLowerCase()}`}
             className={styles["calling-link"]}
           >
             <span>{calling}</span>
-            <FaArrowRight className={styles["arrow"]} /> {/* Updated to use an icon */}
+            <FaArrowRight className={styles["arrow"]} />
           </Link>
         ))}
       </div>
+
+      {/* Bottom Navigation */}
+      <BottomNavigation />
     </div>
   );
 };

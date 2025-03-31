@@ -15,7 +15,7 @@ const NavigationButtons: React.FC = () => {
       </button>
       <button
         className={styles.commonButton}
-        onClick={() => navigate('/Callings')}
+        onClick={() => navigate('/Calling')}
       >
         Callings
       </button>
