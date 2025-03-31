@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 
 const ActionButtons: React.FC = () => {
   const navigate = useNavigate();
-
   return (
     <div className={styles.actionButtonsContainer}>
       <button className={styles.actionButton}>Calendar</button>
