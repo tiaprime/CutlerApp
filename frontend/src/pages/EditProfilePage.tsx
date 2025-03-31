@@ -1,20 +1,27 @@
-'use client';
-import React from 'react';
-import ProfileHeader from '../Components/ProfileHeader';
-import ProfilePicture from '../Components/ProfilePicture';
-import ProfileForm from '../Components/ProfileForm';
-import BottomNavigation from '../Components/BottomNavigation';
+"use client";
+import React from "react";
+import StatusBar from "../Components/StatusBar";
+import ProfileHeader from "../Components/ProfileHeader";
+import ProfilePicture from "../Components/ProfilePicture";
+import ProfileForm from "../Components/ProfileForm";
+import BottomNavigation from "../Components/BottomNavigation";
+import BackButton from "../Components/BackButton";
 
 const EditProfilePage: React.FC = () => {
-  return (
-    <main className="flex flex-col bg-zinc-100 min-h-screen">
-      <ProfileHeader title="Edit Profile" />
-      <section className="flex flex-col items-center px-9">
-        <ProfilePicture imageUrl="https://placehold.co/150x150/006184/006184" />
-        <ProfileForm />
-      </section>
-      <BottomNavigation />
-    </main>
-  );
+    return (
+        <main className="relative flex flex-col min-h-screen w-full bg-[#F4F4F4] before:absolute before:top-0 before:left-0 before:w-full before:h-[35%] before:bg-[#006184] before:rounded-b-[50px]">
+            <StatusBar />
+            <div className="relative w-full px-4">
+                <BackButton />
+                <ProfileHeader title="Edit Profile" />
+            </div>
+            <section className="flex flex-col items-center w-full max-w-lg mx-auto px-4 mt-6">
+                <ProfilePicture imageUrl='/image.png' />
+                <ProfileForm />
+            </section>
+            <BottomNavigation />
+        </main>
+    );
 };
+
 export default EditProfilePage;
