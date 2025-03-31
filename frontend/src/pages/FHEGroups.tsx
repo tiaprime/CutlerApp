@@ -53,7 +53,6 @@ function FHEGroups() {
         rel="stylesheet"
       />
       <main className={styles.container}>
-        <Header />
         <BackButton />
 
         <h1 className={styles.title}>FHE Groups</h1>
