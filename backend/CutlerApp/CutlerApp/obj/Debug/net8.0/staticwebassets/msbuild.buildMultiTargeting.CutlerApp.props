@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\build\CutlerApp.props" />
+  <Import Project="../build/CutlerApp.props" />
 </Project>
